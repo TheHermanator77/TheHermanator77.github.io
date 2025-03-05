@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Kyle Herman</title>
+    <title>Kyle Herman Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e2e;
+            font-family: 'Oswald', sans-serif;
+            background-color: #0d0d0d;
             color: #ffffff;
             text-align: center;
-            padding: 20px;
+            padding: 50px;
+            margin: 0;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: #282a36;
+            background: rgba(20, 20, 20, 0.9);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
         }
         h1 {
-            color: #bd93f9;
+            color: #ff0000;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 1.2rem;
         }
         a {
-            color: #50fa7b;
+            color: #ffffff;
             text-decoration: none;
+            transition: 0.3s;
+            border-bottom: 2px solid red;
         }
         a:hover {
-            text-decoration: underline;
+            color: red;
+            border-bottom: 2px solid white;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>About Me</h1>
-        <p>Hi, I'm Kyle Herman! I'm currently studying to improve my coding skills and hope to become a project manager or work on a game development team in the future.</p>
-        <p>In the past, I worked as a lifeguard and currently repair computers for a living. I also enjoy working on various programming projects, including Arduino and game development.</p>
-        <p>One fun fact about me: I can't handle spicy food!</p>
-        <p>Check out some of my projects:</p>
+        <h1>Kyle Herman Portfolio</h1>
         <ul>
-            <li><a href="#">Interactive Comic</a> - A digital comic experience that combines storytelling with interactive elements, allowing readers to influence the narrative.</li>
-            <li><a href="#">Solo Platformer</a> - A single-player platforming game featuring unique level designs, fluid movement, and challenging mechanics.</li>
-            <li><a href="#">Unity 2-Player Game</a> - A Unity project featuring a two-player game with movement, jumping, and AI-controlled NPCs that shoot projectiles.</li>
-            <li><a href="#">Mobile Narrative Visualization</a> - A data-driven visualization project incorporating a waffle graph, interactive filtering, and timeline improvements.</li>
+            <li><a href="#">First Solo Platformer</a></li>
+            <li><a href="#">Interactive Comic</a></li>
+            <li><a href="#">Mobile Narrative Data Visualization</a></li>
         </ul>
     </div>
 </body>
