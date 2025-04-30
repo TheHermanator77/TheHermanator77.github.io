@@ -163,15 +163,3 @@ hr {
 .art-entry {
   margin-bottom: 40px;
 }
-
-/* EARTHLING CONTAINER */
-.earthling-container {
-  background-color: rgba(0, 0, 0, 0.85);
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(127, 219, 255, 0.2);
-  position: relative;
-  z-index: 1;
-}
