@@ -178,6 +178,7 @@ hr {
   z-index: 1;
 }
 
+/* SPACESHIP DECORATION + ANIMATION */
 .ship-deco {
   position: fixed;
   bottom: 10px;
@@ -185,4 +186,11 @@ hr {
   width: 200px;
   opacity: 0.9;
   z-index: 0;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px) rotate(0deg); }
+  50%  { transform: translateY(-10px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
 }
