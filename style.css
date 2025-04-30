@@ -143,7 +143,7 @@ hr {
   color: #fff;
 }
 
-/* ART SECTION */
+/* ART PAGE */
 .art-image {
   width: 100%;
   max-width: 720px;
@@ -155,4 +155,34 @@ hr {
 
 .art-entry {
   margin-bottom: 40px;
+}
+
+/* === SPECIAL STYLING FOR THE EARTHLING PAGE === */
+.earthling-page {
+  background: url('Space Background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #7FDBFF;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.earthling-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(127, 219, 255, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.ship-deco {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  opacity: 0.9;
+  z-index: 0;
 }
