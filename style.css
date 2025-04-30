@@ -5,9 +5,8 @@ body {
   background-color: #000;
   color: #7FDBFF;
   text-align: center;
-  padding: 50px 20px;
   margin: 0;
-  padding-top: 80px; /* Space for fixed navbar */
+  padding: 80px 20px 50px; /* padding-top for navbar */
 }
 
 /* FIXED NAVBAR */
@@ -24,7 +23,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .navbar a {
@@ -165,7 +164,7 @@ hr {
   margin-bottom: 40px;
 }
 
-/* EARTHLING PAGE CONTAINER */
+/* EARTHLING CONTAINER */
 .earthling-container {
   background-color: rgba(0, 0, 0, 0.85);
   max-width: 800px;
