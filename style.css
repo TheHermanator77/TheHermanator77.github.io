@@ -7,16 +7,24 @@ body {
   text-align: center;
   padding: 50px 20px;
   margin: 0;
+  padding-top: 80px; /* Space for fixed navbar */
 }
 
-/* NAVIGATION BAR */
+/* FIXED NAVBAR */
 .navbar {
   display: flex;
   justify-content: center;
   background-color: #111;
   padding: 15px 0;
-  margin-bottom: 40px;
   border-bottom: 1px solid #7FDBFF;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .navbar a {
@@ -157,7 +165,7 @@ hr {
   margin-bottom: 40px;
 }
 
-/* === SPECIAL STYLING FOR THE EARTHLING PAGE === */
+/* === EARTHLING PAGE BACKGROUND === */
 .earthling-page {
   background: url('Space Background.png') no-repeat center center fixed;
   background-size: cover;
@@ -165,6 +173,7 @@ hr {
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
+  padding-top: 80px; /* For fixed navbar */
 }
 
 .earthling-container {
@@ -176,21 +185,4 @@ hr {
   box-shadow: 0 0 20px rgba(127, 219, 255, 0.2);
   position: relative;
   z-index: 1;
-}
-
-/* SPACESHIP DECORATION + ANIMATION */
-.ship-deco {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 200px;
-  opacity: 0.9;
-  z-index: 0;
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%   { transform: translateY(0px) rotate(0deg); }
-  50%  { transform: translateY(-10px) rotate(1deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
 }
