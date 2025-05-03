@@ -207,3 +207,6 @@ hr {
     max-width: 100%;
   }
 }
+.small-art {
+  max-width: 400px;
+}
