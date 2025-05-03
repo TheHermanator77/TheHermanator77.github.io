@@ -6,10 +6,9 @@ body {
   color: #7FDBFF;
   text-align: center;
   margin: 0;
-  padding: 80px 20px 50px; /* padding-top for navbar */
+  padding: 80px 20px 50px;
 }
 
-/* FIXED NAVBAR */
 .navbar {
   display: flex;
   justify-content: center;
@@ -150,7 +149,6 @@ hr {
   color: #fff;
 }
 
-/* ART AND GAME ASSET DISPLAY */
 .art-image {
   width: 100%;
   max-width: 720px;
@@ -162,4 +160,50 @@ hr {
 
 .art-entry {
   margin-bottom: 40px;
+}
+
+/* === FULL COMIC GRID LAYOUT === */
+.full-width-comic {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.full-width-comic h2 {
+  font-size: 2.5rem;
+  color: #7FDBFF;
+  text-shadow: 0 0 10px #7FDBFF;
+  margin-bottom: 30px;
+}
+
+.comic-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.comic-row img,
+.comic-row video {
+  width: auto;
+  max-width: 160px;
+  height: auto;
+  border: 2px solid #7FDBFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(127, 219, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .comic-row img,
+  .comic-row video {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .comic-row img,
+  .comic-row video {
+    max-width: 100%;
+  }
 }
