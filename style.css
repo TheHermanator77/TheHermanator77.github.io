@@ -7,6 +7,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 80px 20px 50px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .navbar {
@@ -45,6 +46,7 @@ body {
   background-color: transparent;
   padding: 20px;
   border-radius: 15px;
+  overflow-x: hidden; /* Extra safety for comic */
 }
 
 h1 {
@@ -193,7 +195,7 @@ hr {
 }
 
 .comic-panel:hover {
-  transform: scale(1.75) translateZ(0);
+  transform: scale(1.5); /* adjusted from 1.75 to reduce scroll risk */
   z-index: 40;
   margin: 0 !important;
   padding: 0 !important;
@@ -240,6 +242,10 @@ hr {
   .comic-panel {
     height: 240px;
     max-width: 100%;
+  }
+
+  .comic-panel:hover {
+    transform: none !important;
   }
 }
 
