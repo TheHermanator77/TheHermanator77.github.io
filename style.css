@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   background-color: transparent;
   padding: 20px;
@@ -162,7 +162,6 @@ hr {
   margin-bottom: 40px;
 }
 
-/* === FULL COMIC GRID LAYOUT === */
 .full-width-comic {
   width: 100%;
   padding: 0 10px;
@@ -176,37 +175,84 @@ hr {
   margin-bottom: 30px;
 }
 
-.comic-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
+/* === Comic Panel Final Style === */
+.comic-panel {
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  border: none;
+  border-radius: 12px;
+  box-shadow: none;
+  margin: 4px;
+  padding: 0;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+  overflow: hidden;
+  background: transparent;
 }
 
-.comic-row img,
-.comic-row video {
+.comic-panel:hover {
+  transform: scale(1.75) translateZ(0);
+  z-index: 40;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* === FULLSCREEN FIX – No Ugly Container === */
+:fullscreen {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.comic-panel:fullscreen {
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  object-fit: contain;
+  height: 100vh;
   width: auto;
-  max-width: 160px;
-  height: auto;
-  border: 2px solid #7FDBFF;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(127, 219, 255, 0.3);
+  max-width: 100%;
+  cursor: zoom-out;
+}
+
+/* === Responsive Panels === */
+@media (max-width: 1024px) {
+  .comic-panel {
+    height: 300px;
+  }
 }
 
 @media (max-width: 768px) {
-  .comic-row img,
-  .comic-row video {
-    max-width: 45%;
+  .comic-panel {
+    height: 240px;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .comic-row img,
-  .comic-row video {
-    max-width: 100%;
+  .comic-panel {
+    height: auto;
+    width: 100%;
+    transform: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
   }
 }
+
 .small-art {
   max-width: 400px;
 }
